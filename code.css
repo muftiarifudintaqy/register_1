@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c75e5e;
+    background-image: url(Image.jpg/1.jpg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	height: 100vh;
+	place-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+    padding: 20px;
+}
+
+.image-left {
+    width: 75%;
+    background-color: rgba(201, 103, 103, 0.5);
+    opacity: 0.8;
+    filter: blur(0px);
+    -webkit-mask-image: linear-gradient(to right, rgb(255, 255, 255) 100%, transparent 100%);
+          mask-image: linear-gradient(to right, rgb(255, 255, 255) 100%, transparent 100%);
+
+}
+
+.form {
+    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 50%;
+   background-image: url(Image.jpg/download.jpeg);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.form h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 
+ 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #48804a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.overlay {
+	background-color: var(--lightblue);
+	background-image: url(Image.jpg/22.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: -100%;
+	position: relative;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+	width: 140%;
+}
